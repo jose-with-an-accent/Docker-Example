@@ -1,7 +1,7 @@
 // Define the datasource
 datasource db {
-  provider = "sqlite"          // Specify SQLite as the database provider
-  url      = "file:./dev.db"   // Location of the SQLite database file
+  provider = "postgresql"          // Specify SQLite as the database provider
+  url      = env("DATABASE_URL")   // Location of the SQLite database file
 }
 
 // Define the generator
