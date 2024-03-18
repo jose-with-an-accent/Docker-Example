@@ -1,0 +1,19 @@
+// Define the datasource
+datasource db {
+  provider = "sqlite"          // Specify SQLite as the database provider
+  url      = "file:./dev.db"   // Location of the SQLite database file
+}
+
+// Define the generator
+generator client {
+  provider = "prisma-client-js" // Specify the Prisma client
+}
+
+// Define the User model
+model User {
+  id        Int      @id @default(autoincrement()) // User ID that auto-increments
+  email     String   @unique                       // User email that must be unique
+  name      String?                                // Optional user name
+  createdAt DateTime @default(now())               // User creation date, defaults to the current date and time
+  updatedAt DateTime @updatedAt                    // Automatically updates when the record is updated
+}
