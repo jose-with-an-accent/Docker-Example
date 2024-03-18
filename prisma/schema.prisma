@@ -6,7 +6,8 @@ datasource db {
 
 // Define the generator
 generator client {
-  provider = "prisma-client-js" // Specify the Prisma client
+  provider = "prisma-client-js" // Specify the Prisma client 
+  binaryTargets = ["native", "linux-musl-openssl-3.0.x", "windows"] // Add this line
 }
 
 // Define the User model
