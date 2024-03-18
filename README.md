@@ -1,7 +1,1 @@
-Basic node application.
-
-Uses
-**PUG**
-**PRISMA**
-**EXPRESS**
-**SQLITE**
+Too lazy to put anything here, just a simple express app that uses docker for training.
