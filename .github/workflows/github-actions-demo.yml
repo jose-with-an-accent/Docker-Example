@@ -9,6 +9,7 @@ on:
 jobs:
   docker:
     runs-on: ubuntu-latest
+    environment: DOCKERHUB_TOKEN
     steps:
       -
         name: Set up QEMU
